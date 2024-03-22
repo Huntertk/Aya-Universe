@@ -14,15 +14,13 @@ const Booking = () => {
     const navigate = useNavigate()
     const {
         bookingDate,
-        adultCount,
-        adultTotal,
-        childCount,
-        childTotal,
         totalAmount,
         loading,
         type,
         bookingTitle,
         pref,
+        generalCount,
+        generalTotal
     } = useSelector(store => store.booking)
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
@@ -39,14 +37,13 @@ const Booking = () => {
                 email,
                 mobileNumber,
                 bookingDate,
-                adultCount,
-                childCount,
+                generalCount,
                 totalAmount,
                 bookingTitle,
                 bookingType: type,
                 responseClientUrl,
                 pref,
-                websiteName: "SKYCAB LANGKAWI"
+                websiteName: "AYA UNIVERSE"
             })
             const response = res.data;
             const {data} = await axios.get('/api/v1/booking/totalbooking')
@@ -67,7 +64,7 @@ const Booking = () => {
     return (
         <section className='bookingMainContainer'>
             <div className="bookingWrapper">
-                <img className='banner' src={"https://res.cloudinary.com/drrkaak40/image/upload/v1708583402/Malaysia%20Experience/SKYCAB%20LANGKAWI/skyrex_1_v4msov.jpg"} alt="banner " />
+                <img className='banner' src={"https://i.postimg.cc/HkLgRqn0/5.jpg"} alt="Aya Universe" />
                 <h1>Confirm and Pay</h1>
                 <div className="detailsWrapper">
                     <div className="detailsContainerWithTimeSlot">
@@ -83,24 +80,18 @@ const Booking = () => {
 
                     <div className="guestQuantity">
                         {
-                            adultCount === 0 ? "" :
+                            generalCount === 0 ? "" :
                                 <div className="guest">
-                                    <p> Adult <span> X {adultCount}</span>
+                                    <p> General <span> X {generalCount}</span>
                                     </p>
-                                    <span>MYR {adultTotal}</span>
+                                    <span>AED {generalTotal}</span>
                                 </div>
-                        }
-                        {
-                            childCount === 0 ? "" : <div className="guest">
-                                <p> Child <span> X {childCount}</span></p>
-                                <span>MYR {childTotal}</span>
-                            </div>
                         }
 
 
                         <div className="guest">
                             <p className='totalPayable'>Total Payable</p>
-                            <span className='totalPayable'>MYR {totalAmount}</span>
+                            <span className='totalPayable'>AED {totalAmount}</span>
                         </div>
                     </div>
                     <form onSubmit={handleSubmit}>

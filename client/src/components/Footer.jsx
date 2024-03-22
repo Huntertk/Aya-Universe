@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="footerMainContainer">
             <div className="footerTopContainer">
                 <img src={logo} alt="" />
-                <p>Malaysia Experience</p>
+                <p>Dubai Experience</p>
             </div>
             <div className="middleContainer">
                 <div className="getHelpContainer">
