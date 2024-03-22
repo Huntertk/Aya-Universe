@@ -5,15 +5,12 @@ import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import {useNavigate} from 'react-router-dom'
 import { 
-    adultCountIncrease, 
-    adultCountDecrease, 
-    childCountIncrease, 
-    childCountDecrease,
-    adultTotalAmount,
-    childTotalAmount,
+    generalCountIncrease, 
+    generalCountDecrease, 
     countTotalBookingAmount,
     cancelBooking,
     closePaxModel,
+    generalTotalAmount,
 } from '../features/booking/bookingSlice';
 
 
@@ -46,7 +43,7 @@ const Pax = ({category, ageText, count, actionType, total}) => {
                     
             </div>
             <div className="price">
-                <span>MYR {total}</span>
+                <span>AED {total}</span>
             </div>
         </div>
     )
@@ -54,24 +51,21 @@ const Pax = ({category, ageText, count, actionType, total}) => {
 
 const PaxModal = ({selectedDate}) => {
     const {
-        adultCount, 
-        childCount,
-        adultTotal,
-        childTotal,
         totalAmount,
         bookingDate,
         pref,
         bookingTitle,
+        generalCount,
+        generalTotal
     } = useSelector((store) => store.booking)
 
     const dispatch = useDispatch()
 
     useEffect(() => {
-        dispatch(adultTotalAmount())
-        dispatch(childTotalAmount())
+        dispatch(generalTotalAmount())
         dispatch(countTotalBookingAmount())
 
-    },[adultCount, childCount])
+    },[generalCount])
     const navigate = useNavigate()
 
   return (
@@ -88,29 +82,19 @@ const PaxModal = ({selectedDate}) => {
         <h1>Select number of tickets</h1>
         <div className="paxSelector">
                 <Pax  
-                category ={"Adult"} 
-                ageText={"13 to 59 yrs"} 
-                count={adultCount}
+                category ={"General"} 
+                ageText={"3 to 99 yrs"} 
+                count={generalCount}
                 actionType={{
-                    increase: adultCountIncrease,
-                    decrease: adultCountDecrease
+                    increase: generalCountIncrease,
+                    decrease: generalCountDecrease
                 }}
-                total={adultTotal}
-                />
-                <Pax  
-                category ={"Child"} 
-                ageText={"3 to 12 yrs"} 
-                count={childCount}
-                actionType={{
-                    increase: childCountIncrease,
-                    decrease: childCountDecrease
-                }}
-                total={childTotal}
+                total={generalTotal}
                 />
         </div>
             <div className="totalPayable">
                 <span>Total</span>
-               <span>MYR {totalAmount}</span>
+               <span>AED {totalAmount}</span>
             </div>
             
         <div className="dateContainer">

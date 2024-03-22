@@ -4,184 +4,28 @@ import { v4 as uuidv4 } from 'uuid';
 
 export const cardData = [
     {
-        id: uuidv4(),
+        _id: uuidv4(),
         image:[
-            "https://res.cloudinary.com/drrkaak40/image/upload/v1708583400/Malaysia%20Experience/SKYCAB%20LANGKAWI/skycab_2_flcc17.jpg",
-            "https://res.cloudinary.com/drrkaak40/image/upload/v1708583400/Malaysia%20Experience/SKYCAB%20LANGKAWI/skydome_2_u41xgj.jpg",
-            "https://res.cloudinary.com/drrkaak40/image/upload/v1708583403/Malaysia%20Experience/SKYCAB%20LANGKAWI/skyrex_4_kmabw2.jpg",
-            "https://res.cloudinary.com/drrkaak40/image/upload/v1708583252/Malaysia%20Experience/SKYCAB%20LANGKAWI/3d_art_museum_1_ylcitb.jpg"
+            "https://i.postimg.cc/mZQBH3K9/2.jpg",
+            "https://i.postimg.cc/CM6HbDDF/21.jpg",
+            "https://i.postimg.cc/Wz48Twky/13.jpg",
+            "https://i.postimg.cc/xTnYyJS4/4.jpg"
         ],
-        title:"Skycab 4 in 1",
-        desc:"Have fun at the Skycab Standard Gondola Cable Car, Skydome, Skyrex and3D Art Langkawi.",
+        title:"General Ticket",
+        desc:"Aya Universe is a captivating space-themed attraction in Dubai, offering immersive experiences and interactive exhibits that transport visitors on a thrilling journey through the cosmos.",
         type:"bookTypeOne",
         preference:[
             {
-                title:"Malaysian",
+                title:"General",
                 price:{
-                    adult:40,
-                    child:32,
+                   general: 106
                 },
                 details:[
-                    "Valid only for Malaysian Citizens"
+                    "General (3 to 99 years old)"
                 ]
             },
-            {
-                title:"Non-Malaysian",
-                price:{
-                    adult:83,
-                    child:64,
-                },
-                details:[
-                    "Valid only for Non Malaysian Citizens"
-                ]
-            }
         ]
     },
-    {
-        id: uuidv4(),
-        image:[
-            "https://res.cloudinary.com/drrkaak40/image/upload/v1708583399/Malaysia%20Experience/SKYCAB%20LANGKAWI/skycab_7_dsrosl.jpg",
-            "https://res.cloudinary.com/drrkaak40/image/upload/v1708583254/Malaysia%20Experience/SKYCAB%20LANGKAWI/skybrdige_1_kcgmsa.jpg",
-            "https://res.cloudinary.com/drrkaak40/image/upload/v1708583253/Malaysia%20Experience/SKYCAB%20LANGKAWI/3d_art_museum_3_jgbxaq.jpg",
-            "https://res.cloudinary.com/drrkaak40/image/upload/v1708583401/Malaysia%20Experience/SKYCAB%20LANGKAWI/skydome_1_wur3dm.png",
-            "https://res.cloudinary.com/drrkaak40/image/upload/v1708583403/Malaysia%20Experience/SKYCAB%20LANGKAWI/skyrex_2_pfaeha.jpg"
-        ],
-        title:"Skycab 5 in 1",
-        desc:"A combo of Skycab Standard Gondola Cable car, Skybridge, Skydome, Skyrexand 3D Art Langkawi.",
-        type:"bookTypeTwo",
-        preference:[
-            {
-                title:"Malaysian",
-                price:{
-                    adult:47,
-                    child:36,
-                },
-                details:[
-                    "Valid only for Malaysian Citizens"
-                ]
-            },
-            {
-                title:"Non-Malaysian",
-                price:{
-                    adult:89,
-                    child:68,
-                },
-                details:[
-                    "Valid only for Non Malaysian Citizens"
-                ]
-            }
-        ]
-    },
-    {
-        id: uuidv4(),
-        image:[
-            "https://res.cloudinary.com/drrkaak40/image/upload/v1708583399/Malaysia%20Experience/SKYCAB%20LANGKAWI/skycab_1_epcm9z.jpg",
-            "https://res.cloudinary.com/drrkaak40/image/upload/v1708583254/Malaysia%20Experience/SKYCAB%20LANGKAWI/3d_art_museum_2_py4sar.jpg",
-            "https://res.cloudinary.com/drrkaak40/image/upload/v1708583255/Malaysia%20Experience/SKYCAB%20LANGKAWI/skybridge_2_zcxw98.jpg",
-            "https://res.cloudinary.com/drrkaak40/image/upload/v1708583401/Malaysia%20Experience/SKYCAB%20LANGKAWI/skyglide_1_nyh0v4.jpg",
-            "https://res.cloudinary.com/drrkaak40/image/upload/v1708583403/Malaysia%20Experience/SKYCAB%20LANGKAWI/skyrex_2_pfaeha.jpg",
-            "https://res.cloudinary.com/drrkaak40/image/upload/v1708583400/Malaysia%20Experience/SKYCAB%20LANGKAWI/skydome_2_u41xgj.jpg"
-
-        ],
-        title:"Skycab 6 in 1",
-        desc:"Opportunity to experience a combo of Skycab Standard Gondola Cable car, Skybridge, Skydome, Skyrex, Skyglide and 3D Art Langkawi.",
-        type:"bookTypeThree",
-        preference:[
-            {
-                title:"Malaysian",
-                price:{
-                    adult:58,
-                    child:43,
-                },
-                details:[
-                    "Valid only for Malaysian Citizens"
-                ]
-            },
-            {
-                title:"Non-Malaysian",
-                price:{
-                    adult:99,
-                    child:74,
-                },
-                details:[
-                    "Valid only for Non Malaysian Citizens"
-                ]
-            }
-        ]
-    },
-    {
-        id: uuidv4(),
-        image:[
-            "https://res.cloudinary.com/drrkaak40/image/upload/v1708583254/Malaysia%20Experience/SKYCAB%20LANGKAWI/eagle_1_ueoe5q.jpg",
-            "https://res.cloudinary.com/drrkaak40/image/upload/v1708583254/Malaysia%20Experience/SKYCAB%20LANGKAWI/eagle_2_jhk0eq.jpg",
-            "https://res.cloudinary.com/drrkaak40/image/upload/v1708583255/Malaysia%20Experience/SKYCAB%20LANGKAWI/eagle_3_w0o2sy.jpg",
-            "https://res.cloudinary.com/drrkaak40/image/upload/v1708583254/Malaysia%20Experience/SKYCAB%20LANGKAWI/eagle_5_q86xdr.jpg",
-            "https://res.cloudinary.com/drrkaak40/image/upload/v1708583254/Malaysia%20Experience/SKYCAB%20LANGKAWI/eagle_4_vygsls.jpg"
-        ],
-        title:"Eagle's Nest Skywalk",
-        desc:"Discover the thrill of the Eagle's Nest Skywalk in Langkawi, Malaysia! Walk on glass bridge extending from a cliff and enjoy stunning views of the rainforest and ocean.",
-        type:"bookTypeFour",
-        preference:[
-            {
-                title:"Malaysian",
-                price:{
-                    adult:27,
-                    child:16,
-                },
-                details:[
-                    "Valid only for Malaysian Citizens"
-                ]
-            },
-            {
-                title:"Non-Malaysian",
-                price:{
-                    adult:48,
-                    child:36,
-                },
-                details:[
-                    "Valid only for Non Malaysian Citizens"
-                ]
-            }
-        ]
-    },
-    {
-        id: uuidv4(),
-        image:[
-            "https://res.cloudinary.com/drrkaak40/image/upload/v1708583401/Malaysia%20Experience/SKYCAB%20LANGKAWI/skycab_3_tehqe5.jpg",
-            "https://res.cloudinary.com/drrkaak40/image/upload/v1708583400/Malaysia%20Experience/SKYCAB%20LANGKAWI/skycab_2_flcc17.jpg",
-            "https://res.cloudinary.com/drrkaak40/image/upload/v1708583399/Malaysia%20Experience/SKYCAB%20LANGKAWI/skycab_8_zounyf.jpg",
-            "https://res.cloudinary.com/drrkaak40/image/upload/v1708583254/Malaysia%20Experience/SKYCAB%20LANGKAWI/eagle_1_ueoe5q.jpg",
-            "https://res.cloudinary.com/drrkaak40/image/upload/v1708583254/Malaysia%20Experience/SKYCAB%20LANGKAWI/eagle_2_jhk0eq.jpg",
-            "https://res.cloudinary.com/drrkaak40/image/upload/v1708583255/Malaysia%20Experience/SKYCAB%20LANGKAWI/eagle_3_w0o2sy.jpg",
-        ],
-        title:"Skycab + Eagle's Nest Skywalk",
-        desc:"Soar to new heights with our Langkawi Cable Car and Eagle's Nest Skywalk combo! Step onto the thrilling glass-floored Skywalk for panoramic views over the rainforest and sea.",
-        type:"bookTypeFive",
-        preference:[
-            {
-                title:"Malaysian",
-                price:{
-                    adult:66,
-                    child:46,
-                },
-                details:[
-                    "Valid only for Malaysian Citizens"
-                ]
-            },
-            {
-                title:"Non-Malaysian",
-                price:{
-                    adult:125,
-                    child:98,
-                },
-                details:[
-                    "Valid only for Non Malaysian Citizens"
-                ]
-            }
-        ]
-    },
-
-    
 ]
 
 export const preferenceData = [

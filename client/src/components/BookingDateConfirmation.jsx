@@ -123,62 +123,10 @@ const BookingDateConfirmation = () => {
               }
           }
 
-          const getBookTypeTwoBlockDates = async () => {
-            try {
-                setIsLoading(true)
-                const {data} = await axios.get('/api/v1/booktype-two-dates-manage/block-dates')
-                setBlockedDates(data.blockDates)
-                setIsLoading(false)
-              } catch (error) {
-                  console.log(error);
-              }
-          }
-
-          const getBookTypeThreeBlockDates = async () => {
-            try {
-                setIsLoading(true)
-                const {data} = await axios.get('/api/v1/booktype-three-dates-manage/block-dates')
-                setBlockedDates(data.blockDates)
-                setIsLoading(false)
-              } catch (error) {
-                  console.log(error);
-              }
-          }
-
-          const getBookTypeFourBlockDates = async () => {
-            try {
-                setIsLoading(true)
-                const {data} = await axios.get('/api/v1/booktype-four-dates-manage/block-dates')
-                setBlockedDates(data.blockDates)
-                setIsLoading(false)
-              } catch (error) {
-                  console.log(error);
-              }
-          }
-
-          const getBookTypeFiveBlockDates = async () => {
-            try {
-                setIsLoading(true)
-                const {data} = await axios.get('/api/v1/booktype-five-dates-manage/block-dates')
-                setBlockedDates(data.blockDates)
-                setIsLoading(false)
-              } catch (error) {
-                  console.log(error);
-              }
-          }
-
         useEffect(() => {
             if(type === 'bookTypeOne'){
                 getBookTypeOneBlockDates()
-            } else if(type === 'bookTypeTwo'){
-                getBookTypeTwoBlockDates()
-            } else if(type === 'bookTypeThree') {
-                getBookTypeThreeBlockDates()
-            } else if(type === 'bookTypeFour') {
-                getBookTypeFourBlockDates()
-            } else if(type === 'bookTypeFive') {
-                getBookTypeFiveBlockDates()
-            }
+            } 
           },[])
 
           

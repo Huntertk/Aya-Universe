@@ -4,10 +4,8 @@ import { toast } from 'react-toastify';
 
 
 const initialState = {
-    adultCount:0,
-    childCount:0,
-    adultTotal: 0,
-    childTotal: 0,
+    generalCount:0,
+    generalTotal: 0,
     totalAmount: 0,
     isPaxModal: false,
     loading: false,
@@ -32,88 +30,22 @@ const bookingSlice = createSlice({
     name:'booking',
     initialState: getBookingDetailsFromLocalStorage() || initialState,
     reducers:{
-        adultCountIncrease : (state, action) => {
-            state.adultCount = state.adultCount + 1
+        generalCountIncrease : (state) => {
+            state.generalCount = state.generalCount + 1
         },
-        adultCountDecrease : (state, action) => {
-            state.adultCount = state.adultCount - 1
+        generalCountDecrease : (state) => {
+            state.generalCount = state.generalCount - 1
         },
-        childCountIncrease : (state, action) => {
-            state.childCount = state.childCount + 1
-        },
-        childCountDecrease : (state, action) => {
-            state.childCount = state.childCount - 1
-        },
-        adultTotalAmount: (state) => {
+        generalTotalAmount: (state) => {
 
             if(state.type === 'bookTypeOne'){
-                if(state.pref === "Malaysian") {
-                    state.adultTotal = state.adultCount *  state.prefrenceOpt[0].price.adult
-                }  else if(state.pref === 'Non-Malaysian') {
-                    state.adultTotal = state.adultCount *  state.prefrenceOpt[1].price.adult
-                }
-            } else if(state.type === 'bookTypeTwo'){
-                if(state.pref === "Malaysian") {
-                    state.adultTotal = state.adultCount *  state.prefrenceOpt[0].price.adult
-                }  else if(state.pref === 'Non-Malaysian') {
-                    state.adultTotal = state.adultCount *  state.prefrenceOpt[1].price.adult
-                }
-            } else if(state.type === 'bookTypeThree'){
-                if(state.pref === "Malaysian") {
-                    state.adultTotal = state.adultCount *  state.prefrenceOpt[0].price.adult
-                }  else if(state.pref === 'Non-Malaysian') {
-                    state.adultTotal = state.adultCount *  state.prefrenceOpt[1].price.adult
-                }
-            } else if(state.type === 'bookTypeFour'){
-                if(state.pref === "Malaysian") {
-                    state.adultTotal = state.adultCount *  state.prefrenceOpt[0].price.adult
-                }  else if(state.pref === 'Non-Malaysian') {
-                    state.adultTotal = state.adultCount *  state.prefrenceOpt[1].price.adult
-                }
-            } else if(state.type === 'bookTypeFive'){
-                if(state.pref === "Malaysian") {
-                    state.adultTotal = state.adultCount *  state.prefrenceOpt[0].price.adult
-                }  else if(state.pref === 'Non-Malaysian') {
-                    state.adultTotal = state.adultCount *  state.prefrenceOpt[1].price.adult
-                }
-            }
-        },
-        childTotalAmount: (state) => {
-
-            if(state.type === 'bookTypeOne'){
-                if(state.pref === "Malaysian") {
-                    state.childTotal = state.childCount *  state.prefrenceOpt[0].price.child
-                }  else if(state.pref === 'Non-Malaysian') {
-                    state.childTotal = state.childCount *  state.prefrenceOpt[1].price.child
-                }
-            } else if(state.type === 'bookTypeTwo'){
-                if(state.pref === "Malaysian") {
-                    state.childTotal = state.childCount *  state.prefrenceOpt[0].price.child
-                }  else if(state.pref === 'Non-Malaysian') {
-                    state.childTotal = state.childCount *  state.prefrenceOpt[1].price.child
-                }
-            } else if(state.type === 'bookTypeThree'){
-                if(state.pref === "Malaysian") {
-                    state.childTotal = state.childCount *  state.prefrenceOpt[0].price.child
-                }  else if(state.pref === 'Non-Malaysian') {
-                    state.childTotal = state.childCount *  state.prefrenceOpt[1].price.child
-                }
-            } else if(state.type === 'bookTypeFour'){
-                if(state.pref === "Malaysian") {
-                    state.childTotal = state.childCount *  state.prefrenceOpt[0].price.child
-                }  else if(state.pref === 'Non-Malaysian') {
-                    state.childTotal = state.childCount *  state.prefrenceOpt[1].price.child
-                }
-            } else if(state.type === 'bookTypeFive'){
-                if(state.pref === "Malaysian") {
-                    state.childTotal = state.childCount *  state.prefrenceOpt[0].price.child
-                }  else if(state.pref === 'Non-Malaysian') {
-                    state.childTotal = state.childCount *  state.prefrenceOpt[1].price.child
-                }
+                if(state.pref === "General") {
+                    state.generalTotal = state.generalCount *  state.prefrenceOpt[0].price.general
+                } 
             }
         },
         countTotalBookingAmount: (state, action) => {
-            state.totalAmount = state.adultTotal + state.childTotal
+            state.totalAmount = state.generalTotal
             state.bookingResponse = ""
         },
         setBookingDate: (state, action) => {
@@ -177,12 +109,9 @@ const bookingSlice = createSlice({
 })
 
 export const {
-    adultCountIncrease, 
-    adultCountDecrease, 
-    childCountIncrease, 
-    childCountDecrease,
-    adultTotalAmount,
-    childTotalAmount,
+    generalCountIncrease, 
+    generalCountDecrease, 
+    generalTotalAmount,
     countTotalBookingAmount, 
     setBookingDate,
     openPaxModel,
