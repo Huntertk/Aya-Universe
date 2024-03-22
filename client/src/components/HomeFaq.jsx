@@ -11,7 +11,7 @@ import QuestionContainer from './QuestionContainer';
 const HomeFaq = () => {
   return (
     <section className='homeFAQMainContainer'>
-        <h1>Frequently Asked Questions About SKYCAB LANGKAWI</h1>
+        <h1>Frequently Asked Questions About AYA UNIVERSE</h1>
         <div className="questionMainContainer">
             {
                 homeFAQ.map((data) => {

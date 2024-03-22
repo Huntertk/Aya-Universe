@@ -274,25 +274,29 @@ export const addQues = [
         id: uuidv4(),
         ques:"Operating Hours ?",
         ans:[
-            "Opens everyday 9am to 6pm"
+            "Sunday to Thursday: 10am - 10pm",
+            "Friday & Saturday: 10am - 12am",
         ]
     },
     {
         id: uuidv4(),
         ques:"Child Policy",
         ans:[
-            "Adult age 13 and above",
-            "Child age 3 to 12 years old",
-            "Below 3 years old enter for Free",
-            "Senior citizen may purchase at the counter directly",
-            "OKU/disabled person may purchase at the counter directly",
+            "Child below 3 years old enter for Free",
+            "Adult age above 12 years old",
+            "People of determination enter for Free"
         ]
     },
     {
         id: uuidv4(),
         ques:"Important Information",
         ans:[
-            "Customer need to refer to the counter if any bad weather condition",
+            "No outside food and drinks allowed inside",
+            "Sealed water bottle only allowed",
+            "Comfortable and appropriate attire",
+            "Flash photography is prohibited inside the attraction",
+            "Participants are obligated to keep a valid ID or passport on their personat all times.",
+            "The park is not suitable for guest who have light sensitivity or photosensitive epilepsy"
         ]
     },
     {
@@ -300,13 +304,6 @@ export const addQues = [
         ques:"Refund/Cancellation Policy",
         ans:[
             "No cancellation and refund are allowed once purchased"
-        ]
-    },
-    {
-        id: uuidv4(),
-        ques:"Redemption Guide",
-        ans:[
-            "Upon arrival, show your ticket/e-voucher at the counter",
         ]
     },
     {
@@ -323,33 +320,33 @@ export const addQues = [
 export const homeFAQ = [
     {
         id: uuidv4(),
-        ques:"How long is the cable car ride ?",
-        ans:"The cable car ride takes approximately 15 minutes from the base station to the Top Station"
+        ques:"What is the operation hours for Aya Universe ?",
+        ans:"Sunday to Thursday open from 10am to 10pm while on Friday and Saturday open until 12am. Last entry to the park is 1 hour before closing"
     },
     {
         id: uuidv4(),
-        ques:"What are the main attractions along the cable car route ?",
-        ans:"Along the cable car route, visitors can enjoy panoramic views of the surrounding islands and seascape. They can also explore the Middle and Top Stations and walk on the SkyBridge for breathtaking vistas"
+        ques:"Where is Aya Universe located ?",
+        ans:"Level One of Wafi City Mall's Main Atrium in Dubai"
     },
     {
         id: uuidv4(),
-        ques:"Is Skycab Langkawi suitable for children and elderly visitors ?",
-        ans:"Yes, Skycab Langkawi is suitable for visitors of all ages. However, individuals with certain medical conditions or mobility issues may find the cable car ride challenging"
+        ques:"Which metro station is closest to Aya Universe ?",
+        ans:"The closest metro station to Aya is The Dubai Healthcare City"
     },
     {
         id: uuidv4(),
-        ques:"What are the operating hours of Skycab Langkawi ?",
-        ans:"The operating hours of Skycab Langkawi vary depending on the season and weather conditions. It is advisable to check the official website or contact the attraction directly for the latest information"
+        ques:"Can I get discount if am I disabled ?",
+        ans:"Yes, For people of determination, you may enter for Free"
     },
     {
         id: uuidv4(),
-        ques:"Is there parking available at Skycab Langkawi ?",
-        ans:"Yes, there is ample parking available at the Oriental Village for visitors arriving by car or motorcycle"
+        ques:"Is there parking available ?",
+        ans:"Yes, Covered parking available at the Wafi City Mall"
     },
     {
         id: uuidv4(),
-        ques:"Is there wheelchair service available ?",
-        ans:"Yes, you may request for wheelchair at the customer service"
+        ques:"Is Aya Universe wheelchair-accessible ?",
+        ans:"Yes it is"
     },
 ]
 
