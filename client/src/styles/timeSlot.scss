@@ -1,0 +1,52 @@
+@use './variables.scss' as *;
+
+.timeSlotsContainer{
+    text-align: center;
+    margin: 1rem 0;
+
+    h1{
+        margin: 1rem 0;
+    }
+
+    .timSlotWrapper{
+        display: flex;
+        width: 100%;
+        align-items:center;
+        gap: 20px;
+        flex-wrap: wrap;
+
+        button{
+            display: flex;
+            background-color: $primaryModalColor;
+            color: #000;
+            font-size: 1rem;
+            border: 1px solid $primary;
+            gap: 10px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0.6rem 1rem;
+            border-radius: 14px;
+
+            &:hover{
+                background-color: $primary;
+                color: #fff;
+            }
+        }
+        .selected{
+            background-color: $primary;
+            color: #fff;    
+        }
+    }
+}
+
+
+@media screen and (min-width:767px) {
+    .timeSlotsContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 60%;
+    }
+}

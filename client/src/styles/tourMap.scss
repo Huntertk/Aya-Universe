@@ -1,0 +1,24 @@
+@use './variables.scss' as *;
+
+.tourMapMainSectionContainer{
+    .mapContainer{
+
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media screen and (min-width: 767px) {
+    .tourMapMainSectionContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .mapContainer{
+           width: 70%;
+        }
+    }
+}
