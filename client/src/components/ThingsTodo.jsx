@@ -7,7 +7,7 @@ const Cards = () => {
     return  (
         thingsTodo.map((data) => {
             return <div className="card" key={data.id}>
-                <img src={data.image} alt="" />
+                <img src={data.image} alt={data.title}/>
                 <div className="content">
                     <h3>{data.title}</h3>
                     <p>{data.desc}</p>
@@ -20,7 +20,7 @@ const Cards = () => {
 const ThingsTodo = () => {
   return (
     <section className='HomeBuffetOptionMainContainer'>
-        <h1>Highlights SKYCAB LANGKAWI</h1>
+        <h1>Highlights AYA UNIVERSE</h1>
         <div className="cardMainContainer">
             <Cards />
         </div>

@@ -6,21 +6,21 @@ const HomeWhyVisit = () => {
   return (
     <section className='whyVisitMainComponents'>
         
-        <h1>Why You Need to Visit Skycab Langkawi ?</h1>
+        <h1>Why You Need to Visit Aya Universe ?</h1>
         <div className="whyVisitCardContainer">
             <div className="listData">
 
                     <p>
-                        <img src="https://res.cloudinary.com/drrkaak40/image/upload/v1708583400/Malaysia%20Experience/SKYCAB%20LANGKAWI/skycab_ounpxw.jpg" alt="image" /><br />
-                        <span>Stunning Scenery</span>Enjoy breathtaking views of Langkawi's rainforest and islands.<br/>
+                        <img src="https://i.postimg.cc/HkLgRqn0/5.jpg" alt="Family-Friendly Fun" /><br />
+                        <span>Family-Friendly Fun</span>Experience unforgettable family fun exploring the stars together at Aya Universe.<br/>
                     </p>
                     <p>
-                        <img src="https://res.cloudinary.com/drrkaak40/image/upload/v1708583400/Malaysia%20Experience/SKYCAB%20LANGKAWI/skycab_2_flcc17.jpg" alt="images" /><br />
-                        <span>Thrilling Ride</span>Experience an exhilarating cable car journey up Machinchang mountain.<br/>
+                        <img src="https://i.postimg.cc/28MGNv8H/15.jpg" alt="Unforgettable Entertainment" /><br />
+                        <span>Unforgettable Entertainment</span>Explore captivating installations, multisensory experiences, and hands-on activities at Aya Universe, igniting curiosity about the cosmos.<br/>
                     </p>
                     <p>
-                        <img src="https://res.cloudinary.com/drrkaak40/image/upload/v1708583254/Malaysia%20Experience/SKYCAB%20LANGKAWI/skybrdige_1_kcgmsa.jpg" alt="IMAGE" /><br />
-                        <span>Iconic SkyBridge</span>Walk on the suspended bridge for awe-inspiring views.<br/>
+                        <img src="https://i.postimg.cc/mkSv6jG6/9.jpg" alt="Immersive Space Exploration" /><br />
+                        <span>Immersive Space Exploration</span>Explore captivating installations, multisensory experiences, and hands-on activities at Aya Universe, igniting curiosity about the cosmos.<br/>
                     </p>
                     
             </div>

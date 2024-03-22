@@ -211,21 +211,39 @@ export const preferenceData = [
 export const cardHighLightsDetails = [
     {
         id: uuidv4(),
-        image: "https://res.cloudinary.com/drrkaak40/image/upload/v1708583276/Malaysia%20Experience/SKYCAB%20LANGKAWI/skybridge_3_mhmgch.jpg",
-        title:"Skybridge",
-        desc:"Enjoy both the mesmerising architecture of the bridge, where it's balanced on a single point on top of the pylon, as well as the surrounding nature along the 125m walk."
+        image: "https://i.postimg.cc/4dWvLHSQ/19.jpg",
+        title:"Virtual Reality Adventures",
+        desc:"Step into incredible virtual worlds where you can be a superhero, explore ancient ruins, or even travel through space—all without leaving the building!"
     },
     {
         id: uuidv4(),
-        image: "https://res.cloudinary.com/drrkaak40/image/upload/v1708583401/Malaysia%20Experience/SKYCAB%20LANGKAWI/skyglide_1_nyh0v4.jpg",
-        title:"Skyglide",
-        desc:"A moving glass cabin elevator to skip the exhausting walk to the Skybridge."
+        image: "https://i.postimg.cc/9F6dnhJK/AYA-Universe-Dubai-1-1.jpg",
+        title:"Augmented Reality Experiences",
+        desc:"See the world around you come to life with augmented reality. Interact with virtual creatures, solve puzzles, and discover hidden treasures as you explore"
     },   
     {
         id: uuidv4(),
-        image: "https://res.cloudinary.com/drrkaak40/image/upload/v1708583254/Malaysia%20Experience/SKYCAB%20LANGKAWI/eagle_1_ueoe5q.jpg",
-        title:"Eagle Nest Skywalk",
-        desc:"Located on top of Machincang Mountain, they are the longest freestanding cantiliver skywalk, stretching a whooping 38-metres long and 30 metres wide"
+        image: "https://i.postimg.cc/ZqGz90cj/3.jpg",
+        title:"Interactive Art Installations",
+        desc:"Get lost in mesmerizing art installations that respond to your movements and gestures. It's like stepping into a painting and becoming part of the art work!"
+    },
+    {
+        id: uuidv4(),
+        image: "https://i.postimg.cc/rmVCNNQp/18.jpg",
+        title:"Gaming Zones",
+        desc:"Test your skills in state-of-the-art gaming zones. Whether you're into classic arcade games or the latest virtual reality adventures, there's something for every gamer here."
+    },
+    {
+        id: uuidv4(),
+        image: "https://i.postimg.cc/hPz8sjbV/caption-2.jpg",
+        title:"Live Performances",
+        desc:"Be dazzled by live performances featuring cutting-edge technology and mind-blowing special effects. From futuristic dance shows to immersive theatre experiences, there's always something exciting happening at Aya Universe."
+    },
+    {
+        id: uuidv4(),
+        image: "https://i.postimg.cc/L6DSy996/7.jpg",
+        title:"Tech Workshops",
+        desc:"Learn from the experts in hands-on tech workshops where you can try your hand at coding, robotics, and more. Who knows? You might discover your inner tech genius!"
     },
 ]
 
@@ -234,18 +252,18 @@ export const cardHighLightsDetails = [
 export const thingsTodo = [
     {
         id: uuidv4(),
-        desc:"Experience the longest range mono cable car recorded in Malaysia Bookof Records.",
-        image: "https://res.cloudinary.com/drrkaak40/image/upload/v1708583400/Malaysia%20Experience/SKYCAB%20LANGKAWI/skycab_2_flcc17.jpg"
+        desc:"Experience interactive exhibits bringing the universe to life, offering tactile education for all ages.",
+        image: "https://i.postimg.cc/ZR6t6Zsm/1.jpg"
     },
     {
         id: uuidv4(),
-        desc:"Travel in a amazing journey across the 550 million years old of thick forests at the South East Asia.",
-        image: "https://res.cloudinary.com/drrkaak40/image/upload/v1708583402/Malaysia%20Experience/SKYCAB%20LANGKAWI/skyglide_5_fhabsv.jpg"
+        desc:"Join expert-led presentations and workshops for insights into astronomy and space exploration.",
+        image: "https://i.postimg.cc/4dWvLHSQ/19.jpg"
     },
     {
         id: uuidv4(),
-        desc:"Embark in a whole different world of Sky Dome which offers 360 degrees of 3D Image projection that can easily cover your entire view.",
-        image: "https://res.cloudinary.com/drrkaak40/image/upload/v1708583403/Malaysia%20Experience/SKYCAB%20LANGKAWI/skyrex_2_pfaeha.jpg"
+        desc:"Experience simulations unveiling distant celestial wonders in stunning detail.",
+        image: "https://i.postimg.cc/L6DSy996/7.jpg"
     },
     
 ]

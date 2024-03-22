@@ -6,7 +6,7 @@ const Cards = () => {
     return  (
         cardHighLightsDetails.map((data) => {
             return <div className="card" key={data.id}>
-                <img src={data.image} alt="" />
+                <img src={data.image} alt={data.title} />
                 <div className="content">
                     <h3>{data.title}</h3>
                     <p>{data.desc}</p>
@@ -19,7 +19,7 @@ const Cards = () => {
 const HomeHighlights = () => {
   return (
     <section className='HomeHighlightsMainContainer'>
-        <h1>Things you must try at SKYCAB LANGKAWI</h1>
+        <h1>Things you must try at AYA UNIVERSE</h1>
         <div className="cardMainContainer">
             <Cards />
         </div>
