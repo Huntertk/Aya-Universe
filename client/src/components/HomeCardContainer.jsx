@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../styles/homeCardContainer.scss';
-import { cardData } from '../data';
+// import { cardData } from '../data';
 import HomeCard from './HomeCard';
 import {toast} from 'react-toastify';
 import LoadingSpinner from './LoadingSpinner';
@@ -10,24 +10,24 @@ import { useGetAllBookingPlanQuery } from '../redux/api/bookingPlanApi';
 
 
 const HomeCardContainer = () => { 
-  // const [cardData, setCardData] = useState(null);
-  // const { data, error, isLoading, isSuccess }= useGetAllBookingPlanQuery();
-  // const dispatch = useDispatch()
+  const [cardData, setCardData] = useState(null);
+  const { data, error, isLoading, isSuccess }= useGetAllBookingPlanQuery();
+  const dispatch = useDispatch()
 
-  // useEffect(() => {
-  //   if(isSuccess){
-  //     setCardData(data.bookingPlan)
-  //   }
-  //   if(error){
-  //     toast.error("Please refresh the page")
-  //   }
-  //   dispatch(initialRender())
-  // },[isSuccess,isLoading, error])
+  useEffect(() => {
+    if(isSuccess){
+      setCardData(data.bookingPlan)
+    }
+    if(error){
+      toast.error("Please refresh the page")
+    }
+    dispatch(initialRender())
+  },[isSuccess,isLoading, error])
   
 
-  // if(isLoading){
-  //   return <LoadingSpinner />
-  // }
+  if(isLoading){
+    return <LoadingSpinner />
+  }
   return (
     <section className='HomeCardMainContainer'>
         {cardData?.map((data) => {

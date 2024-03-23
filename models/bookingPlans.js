@@ -10,33 +10,19 @@ const bookingPlanSchema = new mongoose.Schema({
     type:{
         type: String
     },
-    image:{
-        type:[String]
-    },
-    pricing: {
-        malaysian:{
-            adult:{
-                type: Number
+    image:[String],
+    preference: [
+        {
+            title:String,
+            price:{
+                general:Number,
+                adult:Number,
+                child:Number,
+
             },
-            child:{
-                type: Number
-            },
-            senior:{
-                type: Number
-            },
+            details:[String]
         },
-        nonMalaysian:{
-            adult:{
-                type: Number
-            },
-            child:{
-                type: Number
-            },
-            senior:{
-                type: Number
-            },
-        }
-    },
+    ],
 }, {timestamps: true})
 
 const BookingPlan = mongoose.model('bookingPlan', bookingPlanSchema)
