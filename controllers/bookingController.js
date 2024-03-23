@@ -14,8 +14,6 @@ export const createBooking = async (req, res) => {
         email,
         mobileNumber,
         bookingDate,
-        adultCount,
-        childCount,
         totalAmount,
         bookingType,
         bookingTitle,
@@ -160,7 +158,7 @@ export const successBooking = async (req, res, next) => {
                                                                         <table cellpadding="0" cellspacing="0" width="100%">
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <td align="center" class="esd-block-image" style="font-size: 0px;"><a target="_blank" href=""><img src="https://i.postimg.cc/J4DR0BZG/logo.png" alt style="display: block;" width="165"></a></td>
+                                                                                    <td align="center" class="esd-block-image" style="font-size: 0px;"><a target="_blank" href=""><img src="https://i.postimg.cc/jqwnHb5n/DE-Logo-V2.png" alt style="display: block;" width="165"></a></td>
                                                                                 </tr>
                                                                                 <tr>
                                                                                     <td align="center" class="esd-block-text" bgcolor="#ffffff">
@@ -181,7 +179,7 @@ export const successBooking = async (req, res, next) => {
                                                                         <table cellpadding="0" cellspacing="0" width="100%">
                                                                             <tbody>
                                                                                 <tr>
-                                                                                    <td align="center" class="esd-block-image" style="font-size: 0px;"><a target="_blank"><img class="adapt-img" src="https://res.cloudinary.com/drrkaak40/image/upload/v1708583400/Malaysia%20Experience/SKYCAB%20LANGKAWI/skycab_2_flcc17.jpg" alt style="display: block;" width="455"></a></td>
+                                                                                    <td align="center" class="esd-block-image" style="font-size: 0px;"><a target="_blank"><img class="adapt-img" src="https://i.postimg.cc/1tBBkjf6/11.jpg" alt style="display: block;" width="455"></a></td>
                                                                                 </tr>
                                                                             </tbody>
                                                                         </table>
@@ -254,7 +252,7 @@ export const successBooking = async (req, res, next) => {
                                                                                         <table cellpadding="0" cellspacing="0" width="100%">
                                                                                             <tbody>
                                                                                                 <tr>
-                                                                                                    <td align="center" class="esd-block-image" style="font-size: 0px;"><a target="_blank"><img class="adapt-img" src="https://res.cloudinary.com/drrkaak40/image/upload/v1708583399/Malaysia%20Experience/SKYCAB%20LANGKAWI/skycab_8_zounyf.jpg" alt style="display: block;" height="200" width-"150"></a></td>
+                                                                                                    <td align="center" class="esd-block-image" style="font-size: 0px;"><a target="_blank"><img class="adapt-img" src="https://i.postimg.cc/ZR6t6Zsm/1.jpg" alt style="display: block;" height="200" width-"150"></a></td>
                                                                                                 </tr>
                                                                                             </tbody>
                                                                                         </table>
@@ -364,7 +362,7 @@ export const successBooking = async (req, res, next) => {
                                                         </table>
                                                     </td>
                                                 </tr>
-                                                ${req.body.adultCount ? `
+                                                ${req.body.generalCount ? `
                                                     <tr>
                                                         <td class="esd-structure esdev-adapt-off es-p10t es-p10b es-p20r es-p20l" align="left">
                                                             <table width="560" cellpadding="0" cellspacing="0" class="esdev-mso-table">
@@ -379,7 +377,7 @@ export const successBooking = async (req, res, next) => {
                                                                                                 <tbody>
                                                                                                     <tr>
                                                                                                         <td align="left" class="esd-block-text">
-                                                                                                            <p style="font-size: 16px; color: #f26823;"><strong>Adult X ${req.body.adultCount}</strong></p>
+                                                                                                            <p style="font-size: 16px; color: #f26823;"><strong>Adult X ${req.body.generalCount}</strong></p>
                                                                                                         </td>
                                                                                                     </tr>
                                                                                                     <tr>
@@ -410,82 +408,7 @@ export const successBooking = async (req, res, next) => {
                                                                                                 <tbody>
                                                                                                     <tr>
                                                                                                         <td align="right" class="esd-block-text">
-                                                                                                            <p style="font-size: 16px; color: #f26823;"><strong>MYR ${req.body.adultTotal}</strong></p>
-                                                                                                        </td>
-                                                                                                    </tr>
-                                                                                                    <tr>
-                                                                                                        <td align="center" class="esd-block-spacer es-p5t es-p5b" style="font-size:0">
-                                                                                                            <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0">
-                                                                                                                <tbody>
-                                                                                                                    <tr>
-                                                                                                                        <td style="border-bottom: 1px solid #a0937d; background: none; height: 1px; width: 100%; margin: 0px;"></td>
-                                                                                                                    </tr>
-                                                                                                                </tbody>
-                                                                                                            </table>
-                                                                                                        </td>
-                                                                                                    </tr>
-                                                                                                </tbody>
-                                                                                            </table>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </tbody>
-                                                                            </table>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </td>
-                                                    </tr>
-                                                    ` : ""
-                                                }
-
-                                                ${req.body.childCount ? `
-                                                    <tr>
-                                                        <td class="esd-structure esdev-adapt-off es-p10t es-p10b es-p20r es-p20l" align="left">
-                                                            <table width="560" cellpadding="0" cellspacing="0" class="esdev-mso-table">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td class="esdev-mso-td" valign="top">
-                                                                            <table cellpadding="0" cellspacing="0" class="es-left" align="left">
-                                                                                <tbody>
-                                                                                    <tr>
-                                                                                        <td width="267" class="esd-container-frame" align="left">
-                                                                                            <table cellpadding="0" cellspacing="0" width="100%">
-                                                                                                <tbody>
-                                                                                                    <tr>
-                                                                                                        <td align="left" class="esd-block-text">
-                                                                                                            <p style="font-size: 16px; color: #f26823;"><strong>Child X ${req.body.childCount}</strong></p>
-                                                                                                        </td>
-                                                                                                    </tr>
-                                                                                                    <tr>
-                                                                                                        <td align="center" class="esd-block-spacer es-p5t es-p5b" style="font-size:0">
-                                                                                                            <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0">
-                                                                                                                <tbody>
-                                                                                                                    <tr>
-                                                                                                                        <td style="border-bottom: 1px solid #a0937d; background: none; height: 1px; width: 100%; margin: 0px;"></td>
-                                                                                                                    </tr>
-                                                                                                                </tbody>
-                                                                                                            </table>
-                                                                                                        </td>
-                                                                                                    </tr>
-                                                                                                </tbody>
-                                                                                            </table>
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </tbody>
-                                                                            </table>
-                                                                        </td>
-                                                                        <td width="20"></td>
-                                                                        <td class="esdev-mso-td" valign="top">
-                                                                            <table cellpadding="0" cellspacing="0" class="es-right" align="right">
-                                                                                <tbody>
-                                                                                    <tr>
-                                                                                        <td width="273" align="left" class="esd-container-frame">
-                                                                                            <table cellpadding="0" cellspacing="0" width="100%">
-                                                                                                <tbody>
-                                                                                                    <tr>
-                                                                                                        <td align="right" class="esd-block-text">
-                                                                                                            <p style="font-size: 16px; color: #f26823;"><strong>MYR ${req.body.childTotal}</strong></p>
+                                                                                                            <p style="font-size: 16px; color: #f26823;"><strong>MYR ${req.body.generalTotal}</strong></p>
                                                                                                         </td>
                                                                                                     </tr>
                                                                                                     <tr>
@@ -728,8 +651,8 @@ export const successBooking = async (req, res, next) => {
                                                                                     <td align="left" class="esd-block-text es-p10" esd-links-color="#14a0f6">
                                                                                         <p style="color: #000000; line-height: 200%; font-size: 15px;">We're delighted to confirm your booking! Your official e-ticket is on its way to your email shortly. In case you don't receive it, please don't hesitate to get in touch with us.</p>
                                                                                         <p style="color: #000000; line-height: 200%; font-size: 15px;">Contact details:<br>Tel: +6017-2018194, +60173078194, +60193058194<br>Email: <a href="mailto:support@malaysia-experience.com" target="_blank" style="font-size: 15px; color: #14a0f6;">support@malaysia-experience.com</a></p>
-                                                                                        <p style="color: #000000; line-height: 200%; font-size: 15px;">Thank you for choosing Malaysia Experience. We look forward to serving you.</p>
-                                                                                        <p style="color: #000000; line-height: 200%; font-size: 15px;">Best regards,<br>Support Team<br>Malaysia Experience</p>
+                                                                                        <p style="color: #000000; line-height: 200%; font-size: 15px;">Thank you for choosing Dubai Experience. We look forward to serving you.</p>
+                                                                                        <p style="color: #000000; line-height: 200%; font-size: 15px;">Best regards,<br>Support Team<br>Dubai Experience</p>
                                                                                     </td>
                                                                                 </tr>
                                                                             </tbody>
