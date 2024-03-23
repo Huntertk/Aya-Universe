@@ -198,12 +198,12 @@ export const homeFAQ = [
 export const helpCenterBookingFAQ = [
     {
         id: uuidv4(),
-        ques:"How do I make a booking on Malaysia Experience?",
-        ans:"Making a booking is easy! Simply browse through our experiences, select the one you love, choose your preferred date and time, and follow the easy booking steps. Your adventure in Malaysia is just a few clicks away!"
+        ques:"How do I make a booking on Dubai Experience?",
+        ans:"Making a booking is easy! Simply browse through our experiences, select the one you love, choose your preferred date and time, and follow the easy booking steps. Your adventure in Dubai is just a few clicks away!"
     },
     {
         id: uuidv4(),
-        ques:"Is it safe to book through Malaysia Experience?",
+        ques:"Is it safe to book through Dubai Experience?",
         ans:"Absolutely! We prioritize your safety and security. Our booking platform uses industry-standard encryption to safeguard your personal information, ensuring a worry-free booking experience"
     },
     {
@@ -222,11 +222,11 @@ export const helpCenterCancellationFAQ = [
     {
         id: uuidv4(),
         ques:"How do I cancel or request a refund?",
-        ans:"If you need to cancel, log in to your Malaysia Experience account, go to your bookings, and follow the cancellation instructions. Refund eligibility depends on the cancellation policy of the specific experience. We're here to help, so feel free to reach out to our customer support for assistance."
+        ans:"If you need to cancel, log in to your Dubai Experience account, go to your bookings, and follow the cancellation instructions. Refund eligibility depends on the cancellation policy of the specific experience. We're here to help, so feel free to reach out to our customer support for assistance."
     },
     {
         id: uuidv4(),
-        ques:"What happens if the experience is canceled by Malaysia Experience?",
+        ques:"What happens if the experience is canceled by Dubai Experience?",
         ans:"In the rare event that we have to cancel an experience, you will be notified promptly, and a full refund will be processed. Your satisfaction and safety are our top priorities."
     },
 ]
