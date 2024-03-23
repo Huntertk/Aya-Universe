@@ -236,7 +236,7 @@ export const termsandconditiondata = [
     {
         id: uuidv4(),
         title: "Limited License",
-        list:["You are granted a non-exclusive, non-transferable license to access and use our Website in accordance with these Terms."]
+        list:["You are granted a non-exclusive, non-transferable license to access and use our Websitein accordance with these Terms."]
     },
     {
         id: uuidv4(),
