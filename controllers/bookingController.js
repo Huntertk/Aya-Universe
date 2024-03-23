@@ -19,7 +19,8 @@ export const createBooking = async (req, res) => {
         bookingTitle,
         responseClientUrl,
         websiteName,
-        pref
+        pref,
+        generalCount
     } = req.body;
     try {
         const session = await stripe.checkout.sessions.create({
@@ -32,8 +33,7 @@ export const createBooking = async (req, res) => {
                             name: bookingTitle,
                             metadata:{
                                 bookingDate, 
-                                adultCount, 
-                                childCount,
+                                generalCount,
                                 pref, 
                                 name, 
                                 email, 
@@ -65,8 +65,7 @@ export const createBooking = async (req, res) => {
                 receipt_email: email,  // Include user's email as receipt_email
                 metadata: {
                     bookingDate,
-                    adultCount,
-                    childCount,
+                    generalCount,
                     totalAmount,
                 },
             },
@@ -377,7 +376,7 @@ export const successBooking = async (req, res, next) => {
                                                                                                 <tbody>
                                                                                                     <tr>
                                                                                                         <td align="left" class="esd-block-text">
-                                                                                                            <p style="font-size: 16px; color: #f26823;"><strong>Adult X ${req.body.generalCount}</strong></p>
+                                                                                                            <p style="font-size: 16px; color: #f26823;"><strong>General X ${req.body.generalCount}</strong></p>
                                                                                                         </td>
                                                                                                     </tr>
                                                                                                     <tr>
