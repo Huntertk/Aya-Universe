@@ -1,6 +1,9 @@
 @use './variables.scss' as *;
 
 .homeFAQMainContainer{
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 1rem;
     h1{
         text-align: center;
     }
