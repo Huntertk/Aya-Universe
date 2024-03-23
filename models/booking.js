@@ -1,11 +1,11 @@
 import mongoose from 'mongoose'
 
 const bookingSchema = new mongoose.Schema({
-    adultCount:{
+    generalCount:{
         type:Number,
     },
-    childCount:{
-        type: Number,
+    generalTotal:{
+        type:Number,
     },
     totalAmount:{
         type:Number
