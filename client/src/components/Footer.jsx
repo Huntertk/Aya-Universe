@@ -19,7 +19,7 @@ const Footer = () => {
                     <a href="tel:+60356124646">
                         <p>Call Us</p>
                     </a>
-                    <p><a href="mailto:support@malaysia-experience.com"> Email Us </a></p>
+                    <p><a href="mailto:support@dubai-experience.com"> Email Us </a></p>
                     <Link to={"/helpcenter"}>
                         <p>Help Center</p>
                     </Link>
@@ -33,12 +33,12 @@ const Footer = () => {
                     <Link to="/admin/login"><p>Admin</p></Link>
                 </div>
             </div>
-            <div className="icons">
+            {/* <div className="icons">
                 <BsFacebook />
                 <FaXTwitter />
                 <BsInstagram />
 
-            </div>
+            </div> */}
         </div>
     </section>
   )

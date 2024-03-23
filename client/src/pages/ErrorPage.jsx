@@ -6,7 +6,7 @@ const ErrorPage = () => {
   return (
     <section className='errorPage'>
         <img src={image} alt="not found" />
-        <h1>Oops! the Page you find could not found.</h1>
+        <h1>Oops! the Page you looking could not found.</h1>
         <Link to="/">Go Home</Link>
     </section>
   )

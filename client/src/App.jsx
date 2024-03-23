@@ -24,10 +24,6 @@ import {useSelector} from 'react-redux'
 import ErrorPage from './pages/ErrorPage'
 import ManageDates from './pages/adminPage/ManageDates'
 import BookTypeOneDate from './pages/adminPage/BookTypeOneDate'
-import BookTypeTwoDate from './pages/adminPage/BookTypeTwoDate'
-import BookTypeThreeDate from './pages/adminPage/BookTypeThreeDate'
-import BookTypeFourDate from './pages/adminPage/BookTypeFourDate'
-import BookTypeFiveDate from './pages/adminPage/BookTypeFiveDate'
 
 const App = () => {
   const {responseClientUrl} = useSelector(state => state.booking)
@@ -52,10 +48,6 @@ const App = () => {
             <Route path="/admin/all-booking" element={<AllBookings />} />
             <Route path="/admin/manage-dates" element={<ManageDates />} />
             <Route path="/admin/manage-dates/booktype-one" element={<BookTypeOneDate />} />
-            <Route path="/admin/manage-dates/booktype-two" element={<BookTypeTwoDate />} />
-            <Route path="/admin/manage-dates/booktype-three" element={<BookTypeThreeDate />} />
-            <Route path="/admin/manage-dates/booktype-four" element={<BookTypeFourDate />} />
-            <Route path="/admin/manage-dates/booktype-five" element={<BookTypeFiveDate />} />
             <Route path="/admin/confirmed-booking" element={<ConfirmedBooking />} />
             <Route path="/admin/completed-booking" element={<CompletedBooking />} />
             <Route path="/admin/pending-booking" element={<PendingBooking />} />
