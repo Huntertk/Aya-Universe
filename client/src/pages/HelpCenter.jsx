@@ -32,7 +32,11 @@ const QuestionContainer = ({data}) => {
 
 const HelpCenter = () => {
   return (
-    <section className='homeFAQMainContainer'>
+    <section className='homeFAQMainContainer' style={{
+        maxWidth: '800px',
+        margin: '3rem auto',
+        padding: '1rem'
+    }}>
         <h1>Frequently Asked Questions</h1>
         <div className="questionMainContainer">
           <h1>Bookings</h1>
