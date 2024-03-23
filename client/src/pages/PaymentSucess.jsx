@@ -13,8 +13,8 @@ const PaymentSucess = () => {
   const navigate = useNavigate()
   const { 
     bookingDate,
-    adultCount,
-    childCount,
+    generalCount,
+    generalTotal,
     totalAmount,
     bookingResponse,
     name,
@@ -24,8 +24,6 @@ const PaymentSucess = () => {
     type,
     bookingTitle,
     pref,
-    adultTotal,
-    childTotal,
 
   } = useSelector(store => store.booking)
   const dispatch = useDispatch()
@@ -39,15 +37,13 @@ const PaymentSucess = () => {
           email,
           mobileNumber,
           bookingDate,
-          adultCount,
-          childCount,
+          generalCount,
+          generalTotal,
           totalAmount,
           bookingId: createBookingId,
           bookingType: type,
           bookingTitle,
           prefrence: pref,
-          adultTotal,
-          childTotal,
       })
         dispatch(settingBookingResponse({createBookingId}))
         // navigate("/bookingconfirm")

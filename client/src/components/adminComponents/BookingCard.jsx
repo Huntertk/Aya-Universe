@@ -9,6 +9,7 @@ import {updateBookingStats} from '../../features/bookingDetails/bookingDetailsSl
 
 const BookingCard = (props) => {
   const dispatch = useDispatch()
+  console.log(props);
 
     const {
       _id,
@@ -16,8 +17,7 @@ const BookingCard = (props) => {
         name, 
         mobileNumber,
         email,
-        adultCount,
-        childCount,
+        generalCount,
         bookingStatus,
         createdAt,
         updatedAt,
@@ -48,14 +48,13 @@ const BookingCard = (props) => {
         <span>Order ID: {_id}</span>
           <p>Date of Reservation : {bookingDate}</p>
           <p>Reservation-Type : {bookingTitle}</p>
-          { prefrence && <p>Citizen-Type : {prefrence}</p>}
+          { prefrence && <p>Preference : {prefrence}</p>}
           <p>Booked By : {name}</p>
           <p>Contact : {mobileNumber}</p>
           <p>Email : {email}</p>
             <h3>Total Person</h3>
           <div className="personCount">
-            <p>Adult X {adultCount}</p>
-            <p>Child X {childCount}</p>
+            <p>General X {generalCount}</p>
           </div>
           <div className="bookingStatus">
             <span>Booking Status : </span>
@@ -68,7 +67,7 @@ const BookingCard = (props) => {
             </select>
             <button className='updateBtn' onClick={updateBooking}>update</button>
           </div>
-          <p className='totalBill'>Total Bill : MYR {totalAmount}</p>
+          <p className='totalBill'>Total Bill : AED {totalAmount}</p>
           <p>Order Created On : {format(new Date(createdAt), 'MM/dd/yyyy')}</p>
           <p>Last Update at  {formatDistanceToNow(new Date(updatedAt), { addSuffix: true })}</p>
       </div>

@@ -30,6 +30,7 @@ const Booking = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
+        
         try {
             dispatch(bookingStart())
             const res = await axios.post('/api/v1/booking', {

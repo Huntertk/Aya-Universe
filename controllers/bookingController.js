@@ -20,7 +20,9 @@ export const createBooking = async (req, res) => {
         responseClientUrl,
         websiteName,
         pref,
-        generalCount
+        generalCount,
+        generalTotal,
+
     } = req.body;
     try {
         const session = await stripe.checkout.sessions.create({
