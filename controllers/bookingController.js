@@ -407,7 +407,7 @@ export const successBooking = async (req, res, next) => {
                                                                                                 <tbody>
                                                                                                     <tr>
                                                                                                         <td align="right" class="esd-block-text">
-                                                                                                            <p style="font-size: 16px; color: #f26823;"><strong>MYR ${req.body.generalTotal}</strong></p>
+                                                                                                            <p style="font-size: 16px; color: #f26823;"><strong>AED ${req.body.generalTotal}</strong></p>
                                                                                                         </td>
                                                                                                     </tr>
                                                                                                     <tr>
@@ -503,7 +503,7 @@ export const successBooking = async (req, res, next) => {
                                                                                                 </tr>
                                                                                                 <tr>
                                                                                                     <td align="right" class="esd-block-text">
-                                                                                                        <p style="font-size: 16px; color: #f26823;"><strong>MYR ${req.body.totalAmount}</strong></p>
+                                                                                                        <p style="font-size: 16px; color: #f26823;"><strong>AED ${req.body.totalAmount}</strong></p>
                                                                                                     </td>
                                                                                                 </tr>
                                                                                                 <tr>
