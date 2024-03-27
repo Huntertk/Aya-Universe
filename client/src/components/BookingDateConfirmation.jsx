@@ -47,7 +47,7 @@ const DateBtn = ({setSelectedDate, setCalenderOpen,selectedDate, calenderOpen, d
     },[])
     return (
         <div className="dateBtnContainer">
-           <button className={selectedDate?.toString() == new Date(Date.now() + 1000 *60 *60 *24)  ? "active" : ""}
+           <button className={selectedDate?.toString().slice(0,15) == new Date(Date.now() + 1000 *60 *60 *24).toString().slice(0,15)  ? "active" : ""}
            onClick={() => setSelectedDate(new Date(Date.now() + 1000 *60 *60 *24 ))}
            disabled={disabledBtnToDate(1000 *60 *60 *24)}
            >
@@ -59,7 +59,7 @@ const DateBtn = ({setSelectedDate, setCalenderOpen,selectedDate, calenderOpen, d
             </span>
            </button>
            <button 
-           className={selectedDate?.toString() == new Date(Date.now() + 1000*60*60*24*2)  ? "active" : ""}
+           className={selectedDate?.toString().slice(0,15) == new Date(Date.now() + 1000*60*60*24*2).toString().slice(0,15)  ? "active" : ""}
            onClick={() => setSelectedDate(new Date(Date.now() + 1000*60*60*24*2))}
            disabled={disabledBtnToDate(1000 *60 *60 *24*2)}
            >
@@ -71,7 +71,7 @@ const DateBtn = ({setSelectedDate, setCalenderOpen,selectedDate, calenderOpen, d
             </span>
             </button>
            <button  
-            className={selectedDate?.toString() == new Date(Date.now() + 1000*60*60*24 * 3)  ? "active" : ""}
+            className={selectedDate?.toString().slice(0,15) == new Date(Date.now() + 1000*60*60*24 * 3).toString().slice(0,15)  ? "active" : ""}
            onClick={() => setSelectedDate(new Date(Date.now() + 1000*60*60*24 * 3))}
            disabled={disabledBtnToDate(1000 *60 *60 *24*3)}
            >
@@ -83,7 +83,7 @@ const DateBtn = ({setSelectedDate, setCalenderOpen,selectedDate, calenderOpen, d
             </span>
             </button>
            <button 
-            className={selectedDate?.toString() == new Date(Date.now() + 1000*60*60*24 *4)  ? "active" : ""}
+            className={selectedDate?.toString().slice(0,15) == new Date(Date.now() + 1000*60*60*24 *4).toString().slice(0,15)  ? "active" : ""}
            onClick={() => setSelectedDate(new Date(Date.now() + 1000*60*60*24 * 4))}
            disabled={disabledBtnToDate(1000 *60 *60 *24*4)}
            >
